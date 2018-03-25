@@ -8,15 +8,17 @@ from math import radians
 import cadquery
 from Helpers import show
 
+TOLERANCE = 0.2
+
 TILE_D = 20
 TILE_W = 8.5
 
 BEARING_EXT_D = 6.2
 BEARING_EXT_W = 0.6
-BEARING_D = 5
+BEARING_D = 5 + TOLERANCE
 
 PETAL_N = 6
-PETAL_D = 3.8
+PETAL_D = 3.8 - TOLERANCE
 PETAL_CENTER = 11
 
 CENTER_D = 9
